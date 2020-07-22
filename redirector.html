@@ -1,0 +1,23 @@
+<script>
+  var lnk = window.location.search.substr(1);
+  var redirLink = '';
+  if (lnk === "1") {
+    redirLink = 'https://telegram.me/s/chebmedia'
+  } else if (lnk === "2") {
+    redirLink = 'tg://resolve?domain=chebmedia'
+  } else if (lnk === "3") {
+    redirLink = 'https://www.instagram.com/chebmedia/'
+  } else if (lnk === "4") {
+    redirLink = 'instagram://user?username=chebmedia'
+  } else if (lnk === "5") {
+    redirLink = 'https://vk.com/chebmedia'
+  } else if (lnk === "6") {
+    redirLink = 'vk://vk.com/chebmedia'
+  }
+  if (redirLink.length > 0) {
+    window.location = redirLink;
+  }
+  setTimeout(() => {
+    alert('Не могу открыть ' + redirLink);
+  }, 2000);
+</script>
